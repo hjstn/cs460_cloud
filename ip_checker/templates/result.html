@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IP Information</title>
+</head>
+<body>
+    <h1>IP Information</h1>
+    <p>IP Address: {{ ip }}</p>
+    <h2>AbuseIPDB Data:</h2>
+    <p>
+        Score: {{ abuse.score }}
+        <br/>
+        Reports: {{ abuse.reports }} ({{ abuse.users }} users)
+        <br/>
+        Usage Type: {{ abuse.usage }}
+    </p>
+
+    <h2>IPWhois Data:</h2>
+    <p>
+        Location: {{ whois.location }} ({{ whois.timezone }})
+        <br/>
+        AS: {{ whois.asn }} ({{ whois.isp }})
+    </p>
+</body>
+</html>
